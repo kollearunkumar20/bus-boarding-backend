@@ -1,9 +1,12 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   datasource:
     url: jdbc:h2:mem:busdb
     driver-class-name: org.h2.Driver
     username: sa
-    password: 
+    password:
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
@@ -15,6 +18,3 @@ spring:
     console:
       enabled: true
       path: /h2-console
-  
-  server:
-  port: ${PORT:8080}
